@@ -1,0 +1,13 @@
+opam-version: "1"
+maintainer: "af@issuu.com"
+build: [
+  ["ocaml" "setup.ml" "-configure" "--prefix" "%{prefix}%"]
+  ["ocaml" "setup.ml" "-build"]
+  ["ocaml" "setup.ml" "-install"]
+]
+remove: [
+  ["ocamlfind" "remove" "aws"]
+]
+depends: [ "oasis" "ocamlfind" "lwt" "pcre-ocaml" "ocamlnet" ]
+conflicts: [ "cohttp" ]
+

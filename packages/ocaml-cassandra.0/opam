@@ -1,0 +1,11 @@
+opam-version: "1"
+maintainer: "af@issuu.com"
+build: [
+  ["make"]
+  ["make install"]
+]
+remove: [
+  ["ocamlfind" "remove" "cassandra"]
+]
+depends: [ "omake" "ocamlfind" "lwt" "batteries" ]
+
