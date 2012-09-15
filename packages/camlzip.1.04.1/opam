@@ -2,5 +2,8 @@ opam-version: "1"
 maintainer: "contact@ocamlpro.com"
 build: [
   ["make" "all"]
+  ["make" "install"]  
+  ["make" "allopt"]
+  ["make" "installopt"]  
   ["make" "install-findlib"]
 ]
