@@ -7,3 +7,8 @@ build: [
   ["make" "installopt"]  
   ["make" "install-findlib"]
 ]
+remove: [
+  ["ocamlfind" "remove" "zip"]
+]
+
+
