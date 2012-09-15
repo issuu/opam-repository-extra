@@ -2,7 +2,7 @@ opam-version: "1"
 maintainer: "af@issuu.com"
 build: [
   ["omake"]
-  ["make" "reinstall"]
+  ["make" "install"]
 ]
 remove: [
   ["ocamlfind" "remove" "cassandra"]
