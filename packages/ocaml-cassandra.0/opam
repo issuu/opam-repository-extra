@@ -1,6 +1,7 @@
 opam-version: "1"
 maintainer: "af@issuu.com"
 build: [
+  ["make clean"]
   ["make"]
   ["make install"]
 ]
