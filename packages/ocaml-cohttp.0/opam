@@ -6,7 +6,7 @@ build: [
   ["ocaml" "setup.ml" "-install"]
 ]
 remove: [
-  ["ocamlfind" "remove" "aws"]
+  ["ocamlfind" "remove" "cohttp"]
 ]
 depends: [ "oasis" "ocamlfind" "lwt" "pcre-ocaml" "ocamlnet" ]
 conflicts: [ "cohttp" ]
