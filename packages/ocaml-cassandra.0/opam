@@ -1,9 +1,8 @@
 opam-version: "1"
 maintainer: "af@issuu.com"
 build: [
-  ["make clean"]
-  ["make"]
-  ["make install"]
+  ["omake"]
+  ["ocamlfind install cassandra src/META src/*.{mli,cmi,cmx,cmxa,cma,a}"]
 ]
 remove: [
   ["ocamlfind" "remove" "cassandra"]
