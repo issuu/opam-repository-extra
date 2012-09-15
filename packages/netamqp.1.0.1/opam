@@ -1,7 +1,7 @@
 opam-version: "1"
 maintainer: "anders@fugmann.net"
 build: [
-  ["omake OCAMLPACKS=pcre"]
+  ["omake" "OCAMLPACKS=pcre"]
   ["make" "install"]
 ]
 remove: [
