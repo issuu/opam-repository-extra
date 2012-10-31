@@ -1,7 +1,7 @@
 opam-version: "1"
 maintainer: "anders@fugmann.net"
 build: [
-  ["oasis" "configure"]
+  ["oasis" "setup"]
   ["ocaml" "setup.ml" "-configure" "--prefix" "%{prefix}%"]
   ["ocaml" "setup.ml" "-build"]
   ["ocaml" "setup.ml" "-install"]
