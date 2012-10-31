@@ -1,6 +1,7 @@
 opam-version: "1"
 maintainer: "anders@fugmann.net"
 build: [
+  ["oasis" "setup"]
   ["ocaml" "setup.ml" "-configure" "--prefix" "%{prefix}%"]
   ["ocaml" "setup.ml" "-build"]
   ["ocaml" "setup.ml" "-install"]
@@ -8,6 +9,14 @@ build: [
 remove: [
   ["ocamlfind" "remove" "aws"]
 ]
-depends: [ "ocamlfind" "lwt" "pcre-ocaml" "ocaml-cohttp" "cryptokit" "calendar" "xmlm" "ocamlnet" ]
 
-
+depends: [
+  "ocamlfind"
+  "oasis"
+  "cryptokit"
+  "calendar"
+  "lwt"
+  "xmlm"
+  "yojson"
+  "ocaml-cohttp"
+]
