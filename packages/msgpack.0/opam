@@ -1,0 +1,8 @@
+opam-version: "1"
+maintainer: "anders@fugmann.net"
+build: [
+  ["omake"]
+  ["omake" "install"]
+]
+
+depends: [ "omake" "coq" {= "8.3"} "extlib" "ocamlfind"]
