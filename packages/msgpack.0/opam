@@ -5,4 +5,8 @@ build: [
   ["omake" "install"]
 ]
 
+remove: [
+  ["ocamlfind" "remove" "msgpack"]
+]
+
 depends: [ "omake" "coq" {= "8.3"} "extlib" "ocamlfind"]
