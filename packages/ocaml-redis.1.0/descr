@@ -1,0 +1,1 @@
+Ocaml-redis implements the client spec of the Redis key-value store. This version is aimed to be compatible with Redis 2.2, and is not compatible with earlier versions.

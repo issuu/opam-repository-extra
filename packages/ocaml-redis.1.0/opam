@@ -1,0 +1,13 @@
+opam-version: "1"
+maintainer: "anders@fugmann.net"
+build: [
+  ["oasis" "setup"]
+  ["make"]
+  ["make" "install"]
+]
+
+remove: [
+  ["ocamlfind" "remove" "redis"]
+]
+
+depends: [ "ocamlfind" "oasis" ]
