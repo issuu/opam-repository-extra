@@ -2,7 +2,7 @@ opam-version: "1"
 maintainer: "anders@fugmann.net"
 build: [
   ["ln" "-s" "3.12" "piqi-camlp4/4.00"]
-  ["make" "deps"]
+  ["sh" "configure"]
   ["make"]
   ["make" "ocaml"]
   ["make" "ocaml-install"]
@@ -12,6 +12,6 @@ remove: [
   ["make" "ocaml-uninstall"]
 ]
 
-depends: [ "ocamlfind" ]
+depends: [ "ocamlfind" "ulex" "easy-format" "xmlm" ]
 
-patches: ["Makefile.patch"]
+patches: ["strip_deps.patch"]
