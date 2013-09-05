@@ -1,1 +1,1 @@
-archive: "https://github.com/issuu/aws/tarball/master"
+git: "git@github.com:issuu/aws.git"
