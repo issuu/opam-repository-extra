@@ -1,4 +1,0 @@
-bin: [
-  "piqi-tools/piqi"
-  "piqic/piqic"
-]

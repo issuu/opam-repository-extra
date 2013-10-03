@@ -7,7 +7,7 @@ build: [
   ["ocaml" "setup.ml" "-install"]
 ]
 remove: [
-  ["ocamlfind" "remove" "ZMQ" "oasis"]
+  ["ocamlfind" "remove" "ZMQ"]
 ]
-depends: ["ocamlfind" "ounit" "uint"]
+depends: ["ocamlfind" "ounit" "uint" "oasis"]
 homepage: "https://github.com/issuu/ocaml-zmq"
