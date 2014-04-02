@@ -10,3 +10,7 @@ remove: [
 ]
 
 depends: [ "omake" "batteries" "ocamlfind"]
+
+patches: [
+  "warning.diff"
+]
