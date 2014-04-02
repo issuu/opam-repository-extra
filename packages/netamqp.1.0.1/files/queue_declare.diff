@@ -1,0 +1,13 @@
+diff -rub netamqp-1.0/netamqp_queue.ml netamqp-1.0.1/netamqp_queue.ml
+--- netamqp-1.0/netamqp_queue.ml	2011-03-28 15:11:57.000000000 +0200
++++ netamqp-1.0.1/netamqp_queue.ml	2013-08-15 08:44:05.745788159 +0200
+@@ -54,7 +54,7 @@
+     channel
+     (`AMQP_0_9
+        (`Queue_declare
+-	  (0, queue, false, durable, exclusive, auto_delete, no_wait, [])))
++	  (0, queue, false, durable, exclusive, auto_delete, no_wait, arguments)))
+     None
+   ++ (fun (m, _) ->
+ 	match m with
+Only in netamqp-1.0.1: #OMakefile#

@@ -1,0 +1,17 @@
+opam-version: "1"
+maintainer: "contact@ocamlpro.com"
+build: [
+  [make]
+  [make "install"]
+]
+remove: [["ocamlfind" "remove" "netamqp"]]
+depends: [
+  "ocamlfind"
+  "ocamlnet"
+  "pcre-ocaml"
+  "omake"
+]
+patches: [
+  "omakefile.diff"
+  "queue_declare.diff"
+]

@@ -1,0 +1,18 @@
+--- netamqp-1.0/OMakefile~	2011-03-28 15:11:57.000000000 +0200
++++ netamqp-1.0/OMakefile	2014-04-02 21:35:37.161802731 +0200
+@@ -1,5 +1,6 @@
+ USE_OCAMLFIND = true
+ BYTE_ENABLED = true
++OCAMLCFLAGS += -g
+ 
+ # Set this to "true" on the command-line for invoking amqp_gen
+ if $(not $(defined REGENERATE))
+@@ -23,7 +24,7 @@
+    netamqp_basic
+    netamqp_tx
+ 
+-OCAMLPACKS += rpc
++OCAMLPACKS += rpc pcre
+ 
+ LocalOCamlGeneratedFiles($(GEN))
+ 
