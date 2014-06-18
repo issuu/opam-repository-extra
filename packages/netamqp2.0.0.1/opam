@@ -1,0 +1,14 @@
+opam-version: "1"
+maintainer: "anders@fugmann.net"
+build: [
+  [make]
+  [make "install"]
+]
+remove: [["ocamlfind" "remove" "netamqp"]]
+depends: [
+  "ocamlfind"
+  "ocamlnet"
+  "pcre-ocaml"
+  "pxp"
+  "omake"
+]
