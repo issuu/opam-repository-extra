@@ -12,4 +12,3 @@ depends: [
   "pxp"
   "omake"
 ]
-conflicts: [ "netamqp" ]
