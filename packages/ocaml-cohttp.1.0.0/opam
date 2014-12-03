@@ -14,7 +14,7 @@ depends: [
   "oasis"
   "lwt"
   "calendar"
-  "pcre-ocaml"
+  "pcre"
   "ocamlnet"
 ]
 

@@ -8,7 +8,7 @@ remove: [["ocamlfind" "remove" "netamqp"]]
 depends: [
   "ocamlfind"
   "ocamlnet"
-  "pcre-ocaml"
+  "pcre"
   "omake"
 ]
 patches: [
