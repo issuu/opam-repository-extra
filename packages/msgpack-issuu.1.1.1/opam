@@ -1,13 +1,17 @@
 opam-version: "1"
 maintainer: "mzp.ppp@gmail.com"
 build: [
+  ["oasis" "setup" ]
   ["ocaml" "setup.ml" "-configure" "--prefix" prefix "--enable-core" "--%{meta_conv:enable}%-conv"]
   ["ocaml" "setup.ml" "-build"]
+]
+
+install: [
   ["ocaml" "setup.ml" "-install"]
 ]
+
 remove: [["ocamlfind" "remove" "msgpack"]]
-depends: [
-  "ocamlfind"
-]
+depends: [ "ocamlfind" ]
+conflicts: [ "msgpack" ]
 ocaml-version: [>= "4.00.0"]
 depopts: ["meta_conv"]
