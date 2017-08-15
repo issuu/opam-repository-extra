@@ -11,3 +11,5 @@ remove: [
 ]
 
 depends: [ "ocamlfind" "oasis" ]
+
+conflicts: [ "redis" ]
