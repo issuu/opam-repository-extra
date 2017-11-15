@@ -52,6 +52,6 @@ depopts: [
   "camlzip"
   "cryptokit"
 ]
-patches: ["robust-host.patch"]
+patches: ["robust-host.patch" "homebrew-openssl-path.patch"]
 available: [ ocaml-version < "4.03.0" ]
 install: [make "install"]
