@@ -1,0 +1,16 @@
+diff --git a/Makefile.rules b/Makefile.rules
+index 0027237..147f748 100644
+--- a/Makefile.rules
++++ b/Makefile.rules
+@@ -16,9 +16,9 @@ OCAMLDEP  = $(OCAMLFIND) ocamldep $(OCAMLDEP_OPTIONS) $(PP_OPTIONS)
+ OCAMLFIND = ocamlfind
+ OCAMLYACC = ocamlyacc
+ OCAMLLEX  = ocamllex
+-OCAMLMKLIB = $(TOP_DIR)/tools/mkstublib
++OCAMLMKLIB = $(TOP_DIR)/tools/mkstublib -L/usr/local/opt/openssl/lib
+ OCAMLDOC  = $(OCAMLFIND) ocamldoc
+-STUBCC    = $(TOP_DIR)/tools/stubcc -ocamlc ocamlc
++STUBCC    = $(TOP_DIR)/tools/stubcc -ocamlc ocamlc -ccopt -I/usr/local/opt/openssl/include
+ 
+ # CPPO: is set by Makefile.conf
+ 
